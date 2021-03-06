@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #ccc;
+
+    &__goBackIcon {
+        font-size: 1.5rem;
+    }
+}
+
+.sectionTitle {
+    display: flex;
+
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+
+    &__icon {
+        margin-left: .5rem;
+    }
+}

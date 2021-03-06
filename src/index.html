@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+
+    <meta name="keywords" content="credit, card, ui, dailyui, ui" />
+    <meta name="description"
+    content="Credit card checkout page for Daily UI Challenge, using the Neumorphic design trend" />
+    <meta name="robots" content="index,nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <meta property="og:type" content="webpage" />
+    <meta property="og:title" content="Credit Card Checkout UI" />
+    <meta property="og:description" content="Credit card checkout page for Daily UI Challenge, using the Neumorphic design trend" />
+    <meta property="og:image" content="./img/Credit Card.svg" />
+    <title>Credit Card Checkout UI</title>
+
+    <script src="https://kit.fontawesome.com/5bf93b33ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__goBack">
+            <i class="header__goBackIcon fas fa-chevron-left"></i>
+        </div>
+        <h2 class="sectionTitle">
+            <span class="sectionTitle__title">Payment Details</span>
+            <i class="sectionTitle__icon fas fa-credit-card"></i>
+        </h2>
+    </header>
+
+    <main class="main">
+        <div class="card">
+            <div class="imgContainer card__chip">
+                <img src="./img/Chip.png">
+            </div>
+            <div class="imgContainer card__cardCompany">
+                <img src="./img/VisaLogo.svg" alt="Visa logo">
+            </div>
+            <div class="numberCard">
+                <span id="numberCard">4444 4444 4444 4444</span>
+            </div>
+            <div class="card__info card__info--holder">
+                <h3>Card Holder</h3>
+                <p id="holderCard">Jhon Dee</p>
+            </div>
+            <div class="card__info card__info--expire">
+                <h3>Expires</h3>
+                <p>
+                    <span id="expiresMonthCard">04</span>/<span id="expiresYearCard">24</span>
+                </p>
+            </div>
+            <div class="card__info card__info--cvv">
+                <h3>CVV</h3>
+                <p id="cvvCard">444</p>
+            </div>
+        </div>
+
+        <form class="form" action="#">
+            <fieldset class="field nameField">
+                <label for="" class="field__name">Cardholoder</label>
+                <div class="input">
+                    <i class="input__icon fas fa-user"></i>
+                    <input class="input__input" placeholder="Cardholder Name" type="text" id="holder">
+                </div>
+            </fieldset>
+
+            <fieldset class="field cardField">
+                <label for="" class="field__name">Card Number</label>
+                <div class="input">
+                    <i class="input__icon fas fa-credit-card"></i>  
+                    <input class="input__input" placeholder="Credit Card Number" type="text" id="number">
+                </div>
+            </fieldset>
+
+            <fieldset class="field monthField">
+                <label for="" class="field__name">Expiry Month</label>
+                <div class="input">
+                    <i class="input__icon fas fa-calendar-alt"></i>
+                    <input class="input__input input__input--short" placeholder="04" type="number" id="expiresMonth">
+                </div>
+            </fieldset>
+
+            <fieldset class="field yearField">
+                <label for="" class="field__name">Expiry Year</label>
+                <div class="input">
+                    <i class="input__icon fas fa-calendar-alt"></i>
+                    <input class="input__input input__input--short" placeholder="2024" type="number" id="expiresYear">
+                </div>
+            </fieldset>
+
+            <fieldset class="field cvvField">
+                <label for="" class="field__name">CVV</label>
+                <div class="input">
+                    <i class="input__icon fas fa-lock"></i>
+                    <input class="input__input input__input--short" placeholder="444" type="number" id="cvv">
+                </div>
+            </fieldset>
+
+            <div class="amount">
+                <span class="amount__text">Payment amount: </span>
+                <h3 class="amount__amount">$ 12.000</h3>
+            </div>
+
+            <div class="btn">
+                <button class="btn__btn">Pay</button>
+                <div class="btn__decoration"></div>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

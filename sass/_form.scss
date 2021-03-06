@@ -1,0 +1,108 @@
+.form {
+    width: 100%;
+    display: grid;
+    grid-template-areas:    "name name name"
+                            "number number number"
+                            "month year cvv"
+                            "amount amount amount"
+                            "btn btn btn";
+}
+
+.field {
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+
+    &__name {
+        font-size: .7rem;
+    }
+
+    
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: #f2f2f2;
+    box-shadow:  5px 5px 10px #d1d1d1,
+                -5px -5px 10px #ffffff;
+    border-radius: 10px;
+
+    &__icon {
+        margin-right: .5rem;
+    }
+
+    &__input {
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        outline: none;
+        padding: .4rem;
+        background: transparent;
+        &--short {
+            width: 30%;
+            padding: .5rem 0;
+        }
+    }
+}
+
+.nameField {
+    grid-area: name;
+}
+
+.cardField {
+    grid-area: number;
+}
+
+.monthField {
+    grid-area: month;
+}
+
+.yearField {
+    grid-area: year;
+}
+
+.cvvField {
+    grid-area: cvv;
+}
+
+.amount {
+    grid-area: amount;
+    display: flex;
+    padding: .5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+
+    }
+
+    &__amount {
+
+    }
+}
+.btn {
+    grid-area: btn;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    
+    
+    &__btn {
+        color: $primary;
+        font-family: 'Poppins', sans-serif;
+        padding: 1rem 2rem;
+        border-radius: 5px;
+        width: 50%;
+        border: 2px solid #fff;
+
+        background: linear-gradient(145deg, $backgroundMain, $backgroundSec);
+        box-shadow:  5px 5px 10px $backgroundMain,
+                -3px -3px 5px $backgroundSec;
+        border-radius: 10px;
+
+        cursor: pointer;
+    }
+}
